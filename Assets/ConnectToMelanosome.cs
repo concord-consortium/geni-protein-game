@@ -26,7 +26,6 @@ public class ConnectToMelanosome : MonoBehaviour {
 			foreach (var p in attachmentPoints) {
 				if (!p.HasBeenConnected) {
 					if (Vector3.Distance (connectionPoint.position, p.Position) < attachDistance) {
-						Debug.Log ("I am close to: " + p);
 						hinge = this.gameObject.AddComponent<HingeJoint2D> ();
 						hinge.anchor = connectionPoint.position;
 						hinge.connectedAnchor = p.Position;
