@@ -19,6 +19,16 @@ and clone the project to your local machine. To open the project, point Unity
 to this folder (there is no single file, Unity looks for the Assets folder to
 determine whether the project can be opened.)
 
+The following settings should be in place when you open the project but
+just in case they are not, these are recommended for ALL Unity projects that
+use external source control like git:
+
+Switch to Visible Meta Files: `Edit → Project Settings → Editor → Version Control Mode`
+Switch to Force Text: `Edit → Project Settings → Editor → Asset Serialization Mode`
+
+With Text as the serialization for scenes and other assets, file sizes will be
+larger, but with the added benefit of support for diffs.
+
 Running this project in the editor should highlight any issues. Building can
 either be done locally (depending on installed modules) or via the
 [Unity Cloud Build](https://build.cloud.unity3d.com/orgs/concord-consortium/projects/geni-protein-game/)
